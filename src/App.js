@@ -13,7 +13,16 @@ function App() {
   };
   return (
     <div className="App">
-      <button onClick={handleClickOpen} style={{ width:"500px", height: "40px", margin:"30px auto", background: "pink", cursor: "pointer" }}>
+      <button
+        onClick={handleClickOpen}
+        style={{
+          width: "500px",
+          height: "40px",
+          margin: "30px auto",
+          background: "pink",
+          cursor: "pointer"
+        }}
+      >
         Click to Open the NewCropper
       </button>
       <EditPhotoDialog open={openEdit} onClose={handleClose}></EditPhotoDialog>
